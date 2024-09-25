@@ -1,3 +1,4 @@
+<!-- Logbook.svelte !Work in progress!-->
 <script>
     import { Router, Link, Route, navigate } from "svelte-routing";
     import { fade } from 'svelte/transition';
@@ -7,10 +8,10 @@
     function goToHome() {
       navigate('/');
     }
-    </script>
+</script>
     
     
-        <h1 class="title">Progress Pall</h1>
+
       
     
        

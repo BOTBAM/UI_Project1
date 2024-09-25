@@ -40,11 +40,15 @@
     // Function to update the day 
     function updateDay()
     {
-      const options = { weekday: 'long', month: 'long', day: 'numeric', };
-      currentDay = new Date().toLocaleDateString(undefined, options);   //Couldn't find out why the overload happens
-    
+  // Correct options for DateTimeFormat
+      const options = { weekday: 'long', month: 'long', day: 'numeric' }; 
+      currentDay = new Date().toLocaleDateString(undefined, options);
+    }
+    function updateDay2()
+    {
+      // Correct options for short date format
       const shortDateOptions = { month: '2-digit', day: '2-digit', year: 'numeric' };
-      shortDate = new Date().toLocaleDateString(undefined, shortDateOptions);  //Couldn't find out why the overload happens
+      shortDate = new Date().toLocaleDateString(undefined, shortDateOptions);
       date = shortDate;
     }
     // This function updates statistics for the dataset
