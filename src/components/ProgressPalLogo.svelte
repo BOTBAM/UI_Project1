@@ -1,6 +1,6 @@
 <!-- ProgressPalLogo.svelte -->
 <div class="logo">
-  <img src="ProgressPal3.png" alt="ProgressPal">
+  <img src="https://github.com/BOTBAM/UI_Project1/tree/main" alt="ProgressPal">
 </div>
   
 <style>
