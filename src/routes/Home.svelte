@@ -50,7 +50,7 @@
   
   <h1>Welcome to</h1>
   <div class="logo" style="width: {width}; height: {height};">
-    <img src="ProgressPal3.png" alt="ProgressPal" />
+    <img src="dist/ProgressPal3.png" alt="ProgressPal" />
     <style>
       .logo
       {
