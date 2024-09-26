@@ -74,13 +74,22 @@
     <input id="password" bind:value={password} class="input-box" placeholder="PASSWORD" />
 
     <button on:click={login}>LOGIN</button>
-    <button on:click={null}>CREATE ACCOUNT</button>
+    <button on:click={showPopup}>CREATE ACCOUNT</button>
     {#if showError}
       <div class="error-message">Please enter both Username and Password.</div>
     {/if}
 
     <div class="options">
-      <span on:click={showPopup}>Forgot your password? Click me!</span>
+      <span
+        role="button"                  
+        tabindex="0"                   
+        aria-roledescription="button"  
+        aria-label="Forgot your password? Click to reset." 
+        on:click={showPopup}
+        on:keydown={(e) => (e.key === 'Enter' || e.key === ' ') && showPopup()}
+        >
+        Forgot your password? Click me!
+      </span>
     </div>
   </div>
 </div>

@@ -28,7 +28,7 @@
   
   color-scheme: light dark;
   color: #62c3fd;
-  background-color: #b1b1b1;
+  background-color: #e6dfdf;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -143,12 +143,12 @@ button:focus-visible
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light)
+@media (prefers-color-scheme: vibrant)
 {
   :root
   {
-    color: #213547;
-    background-color: #a47474;
+    color: #4176a3;
+    background-color: #f0dfdf;
   }
   a:hover
   {
